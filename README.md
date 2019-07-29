@@ -5,6 +5,8 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 
 [![screenshot1](http://i.imgur.com/N36wmBM.png)](http://i.imgur.com/eX250tQ.png) [![screenshot2](http://i.imgur.com/43mmnC7.png)](http://i.imgur.com/RTRgRdC.png) [![screenshot3](http://i.imgur.com/KDBYekd.png)](http://i.imgur.com/OZ4xEeH.jpg)
 
+## Overview
+
 ##### Supported Syncthing features
 - Everything what WebUI can display
 - Adding / editing / deleting nodes
@@ -31,6 +33,8 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 - Windows: Get [latest installer from here](https://github.com/kozec/syncthing-gui/releases/latest), or use [the Chocolatey package](https://chocolatey.org/packages/syncthing-gtk).
 - Or, in worst case scenario, download [latest tarball](https://github.com/kozec/syncthing-gui/releases/latest), extract it and run syncthing-gtk.py.
 
+## Compiling
+### Linux
 ##### Dependencies
 - python 2.7, GTK 3.8 or newer and [PyGObject](https://live.gnome.org/PyGObject)
 - [python-gi-cairo](https://packages.debian.org/sid/python-gi-cairo),
@@ -46,6 +50,15 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 - nautilus-python, nemo-python or caja-python for filemanager integration
 - [this Gnome Shell extension](https://extensions.gnome.org/extension/615/appindicator-support/), if running Gnome Shell
 - [gir1.2-appindicator3](https://packages.debian.org/sid/gir1.2-appindicator3-0.1) (part of [libappindicator](https://launchpad.net/libappindicator)), if running Gnome Shell or Unity
+
+To create a python package on Debian you need to run:
+```
+sudo apt-get install python-pip python
+git clone https://github.com/opensourcer2/syncthing-gtk.git
+cd syncthing-gtk
+python setup.py sdist
+```
+Now you should have a package inside `dist` folder which you can install with `pip install <package_name>`.
 
 ##### Windows Building Dependencies _(you don't need to install these just to **run** Syncthing-GTK)_
 - Python for Windows 2.7
