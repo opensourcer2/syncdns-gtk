@@ -24,7 +24,7 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 ##### Like what I'm doing?
 [![Help me become filthy rich on Liberapay](https://img.shields.io/badge/Help%20me%20become%20filthy%20rich%20on-Liberapay-yellow.svg)](https://liberapay.com/kozec) <sup>or</sup> [![donate anything with PayPal](https://img.shields.io/badge/donate_anything_with-Paypal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=77DQD3L9K8RPU&lc=SK&item_name=kozec&item_number=scc&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
 
-##### Packages
+##### Pre-build Packages
 - Ubuntu, Debian, deb-based distros: in [OpenSUSE Build Service](http://software.opensuse.org/download.html?project=home%3Akozec&package=syncthing-gtk).
 - Arch Linux: In [[community] repository](https://www.archlinux.org/packages/community/any/syncthing-gtk/)
 - Fedora: search for `syncthing-gtk` in Software Center
@@ -33,7 +33,7 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 - Windows: Get [latest installer from here](https://github.com/kozec/syncthing-gui/releases/latest), or use [the Chocolatey package](https://chocolatey.org/packages/syncthing-gtk).
 - Or, in worst case scenario, download [latest tarball](https://github.com/kozec/syncthing-gui/releases/latest), extract it and run syncthing-gtk.py.
 
-## Compiling
+## Installing
 ### Linux
 ##### Dependencies
 - python 2.7, GTK 3.8 or newer and [PyGObject](https://live.gnome.org/PyGObject)
@@ -51,14 +51,22 @@ GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://g
 - [this Gnome Shell extension](https://extensions.gnome.org/extension/615/appindicator-support/), if running Gnome Shell
 - [gir1.2-appindicator3](https://packages.debian.org/sid/gir1.2-appindicator3-0.1) (part of [libappindicator](https://launchpad.net/libappindicator)), if running Gnome Shell or Unity
 
-To create a python package on Debian you need to run:
+For example, on Debian you need to first package it by running:
 ```
-sudo apt-get install python-pip python
+sudo apt-get install python
 git clone https://github.com/opensourcer2/syncthing-gtk.git
 cd syncthing-gtk
 python setup.py sdist
 ```
 Now you should have a package inside `dist` folder which you can install with `pip install <package_name>`.
+```
+sudo apt-get install python-pip
+pip install dist/<package_name>
+```
+
+## Compiling
+### Linux
+
 
 ##### Windows Building Dependencies _(you don't need to install these just to **run** Syncthing-GTK)_
 - Python for Windows 2.7
