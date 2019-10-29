@@ -1,4 +1,4 @@
-SyncDNS
+SyncDNS-GTK
 =============
 
 ## Installing
