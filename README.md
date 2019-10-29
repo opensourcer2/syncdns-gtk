@@ -1,37 +1,5 @@
-Syncthing-GTK
+SyncDNS
 =============
-
-GTK3 &amp; Python based GUI and notification area icon for [Syncthing](https://github.com/syncthing/syncthing)
-
-[![screenshot1](http://i.imgur.com/N36wmBM.png)](http://i.imgur.com/eX250tQ.png) [![screenshot2](http://i.imgur.com/43mmnC7.png)](http://i.imgur.com/RTRgRdC.png) [![screenshot3](http://i.imgur.com/KDBYekd.png)](http://i.imgur.com/OZ4xEeH.jpg)
-
-## Overview
-
-##### Supported Syncthing features
-- Everything what WebUI can display
-- Adding / editing / deleting nodes
-- Adding / editing / deleting repositories
-- Restart / shutdown server
-- Editing daemon settings
-
-##### Additional features
-- First run wizard for initial configuration
-- Running Syncthing daemon in background
-- Half-automatic setup for new nodes and repositories
-- Nautilus (a.k.a. Files), Nemo and Caja integration
-- Desktop notifications
-
-##### Like what I'm doing?
-[![Help me become filthy rich on Liberapay](https://img.shields.io/badge/Help%20me%20become%20filthy%20rich%20on-Liberapay-yellow.svg)](https://liberapay.com/kozec) <sup>or</sup> [![donate anything with PayPal](https://img.shields.io/badge/donate_anything_with-Paypal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=77DQD3L9K8RPU&lc=SK&item_name=kozec&item_number=scc&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
-
-##### Pre-build Packages
-- Ubuntu, Debian, deb-based distros: in [OpenSUSE Build Service](http://software.opensuse.org/download.html?project=home%3Akozec&package=syncthing-gtk).
-- Arch Linux: In [[community] repository](https://www.archlinux.org/packages/community/any/syncthing-gtk/)
-- Fedora: search for `syncthing-gtk` in Software Center
-- SUSE (and other rpm-based distros): in [OpenSUSE Build Service](http://software.opensuse.org/download.html?project=home%3Akozec&package=syncthing-gtk).
-- Flatpak (distro-agnostic): in [Flathub](https://flathub.org/apps/details/me.kozec.syncthingtk)
-- Windows: Get [latest installer from here](https://github.com/kozec/syncthing-gui/releases/latest), or use [the Chocolatey package](https://chocolatey.org/packages/syncthing-gtk).
-- Or, in worst case scenario, download [latest tarball](https://github.com/kozec/syncthing-gui/releases/latest), extract it and run syncthing-gtk.py.
 
 ## Installing
 ### Linux
