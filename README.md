@@ -1,4 +1,4 @@
-SyncDNS-GTK
+DeDNS-GTK
 =============
 
 ## Installing
@@ -21,7 +21,7 @@ SyncDNS-GTK
 
 For example, on Debian you need to first package it by running:
 ```
-sudo apt-get install python
+sudo apt-get install python python-setuptools
 git clone https://github.com/opensourcer2/syncthing-gtk.git
 cd syncthing-gtk
 python setup.py sdist
@@ -34,7 +34,9 @@ pip install dist/<package_name>
 
 ## Compiling
 ### Linux
+......
 
+### Windows
 
 ##### Windows Building Dependencies _(you don't need to install these just to **run** Syncthing-GTK)_
 - Python for Windows 2.7
@@ -44,7 +46,7 @@ pip install dist/<package_name>
 - [WMI](http://timgolden.me.uk/python/wmi/index.html)
 - [NSIS2](http://nsis.sourceforge.net/NSIS_2) with NSISdl, [ZipDLL](http://nsis.sourceforge.net/ZipDLL_plug-in) and [FindProcDLL](http://forums.winamp.com/showpost.php?p=2777729&postcount=8) plugins (optional, for building installer)
 
-##### Related links
+## Related links
 - https://syncthing.net
 - https://forum.syncthing.net/t/syncthing-gtk-gui-for-syncthing-now-with-inotify-support/709
 - https://forum.syncthing.net/t/lxle-a-respin-of-lubuntu-now-has-syncthing-included-by-default/1392
